@@ -1,0 +1,1644 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0e5">
+  <meta name="description" content="Ozodbek va M.M.ning nikoh to‘yiga taklifnoma. 2026-yil 21-oktabr, soat 18:00, Visol to‘yxonasi.">
+  <title>Ozodbek &amp; M.M. — To‘y taklifnomasi</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #493438;
+      --muted: #846c70;
+      --gold: #d6b77a;
+      --gold-dark: #9a7156;
+      --gold-pale: #ead9bc;
+      --paper: #fff8f0;
+      --ground: #f8ebdd;
+      --rose: #d9949c;
+      --blush: #f2c6c6;
+      --burgundy: #a64d5a;
+    }
+
+    .transition-petal {
+      position: fixed;
+      z-index: 5;
+      top: 55%;
+      left: 50%;
+      width: 12px;
+      height: 18px;
+      background: linear-gradient(145deg, rgba(242, 198, 198, .9), rgba(217, 148, 156, .68));
+      border-radius: 100% 0 100% 0;
+      pointer-events: none;
+      animation: petal-transition 1400ms ease-out forwards;
+    }
+
+    @keyframes petal-transition {
+      to {
+        opacity: 0;
+        transform: translate(var(--travel-x), var(--travel-y)) rotate(320deg) scale(.65);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 8% 14%, rgba(217, 198, 154, .23), transparent 30rem),
+        radial-gradient(ellipse at 91% 75%, rgba(166, 109, 99, .11), transparent 32rem),
+        var(--ground);
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    }
+
+    body.intro-active {
+      overflow: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      position: relative;
+      display: grid;
+      width: min(100%, 760px);
+      min-height: min(920px, 100svh);
+      min-height: max(700px, 100svh);
+      align-items: center;
+      justify-items: center;
+      margin: 0 auto;
+      padding: 70px 24px 92px;
+      overflow: hidden;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 50% 49%, rgba(255, 253, 250, .93) 0 26%, rgba(255, 248, 240, .67) 56%, transparent 79%),
+        linear-gradient(180deg, rgba(248, 235, 221, .55), rgba(255, 248, 240, .94) 66%, rgba(242, 198, 198, .35));
+      isolation: isolate;
+    }
+
+    .hero::before {
+      position: absolute;
+      z-index: -1;
+      inset: 20px 13px 16px;
+      border: 1px solid rgba(169, 133, 60, .4);
+      border-radius: 50% 50% 8px 8px / 33% 33% 8px 8px;
+      box-shadow: inset 0 0 0 8px rgba(255, 250, 240, .56), inset 0 0 0 9px rgba(169, 133, 60, .19);
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      z-index: -1;
+      right: -70px;
+      bottom: -78px;
+      left: -70px;
+      height: 230px;
+      border-radius: 50% 50% 0 0;
+      background:
+        radial-gradient(ellipse at 50% 3%, rgba(255, 253, 250, .54), transparent 72%),
+        linear-gradient(180deg, rgba(242, 198, 198, .18), rgba(217, 148, 156, .18));
+      content: "";
+    }
+
+    .hero-content {
+      width: min(100%, 600px);
+      padding: 28px 8px;
+    }
+
+    body.invitation-open .hero-content > * {
+      animation: hero-reveal 800ms cubic-bezier(.2, .7, .2, 1) both;
+    }
+
+    body.invitation-open .hero-content > :nth-child(2) {
+      animation-delay: 120ms;
+    }
+
+    body.invitation-open .hero-content > :nth-child(3) {
+      animation-delay: 220ms;
+    }
+
+    body.invitation-open .hero-content > :nth-child(4) {
+      animation-delay: 340ms;
+    }
+
+    body.invitation-open .hero-content > :nth-child(5) {
+      animation-delay: 460ms;
+    }
+
+    body.invitation-open .hero-content > :nth-child(6) {
+      animation-delay: 580ms;
+    }
+
+    @keyframes hero-reveal {
+      from {
+        opacity: 0;
+        transform: translateY(22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-flower {
+      display: block;
+      width: min(340px, 84vw);
+      height: auto;
+      margin: 0 auto 21px;
+      color: var(--gold);
+      opacity: .82;
+    }
+
+    .eyebrow,
+    .section-label {
+      margin: 0;
+      color: var(--gold-dark);
+      font-family: Arial, sans-serif;
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+
+    .hero-date {
+      margin: 14px 0 0;
+      color: var(--gold-dark);
+      font-size: clamp(1.16rem, 4vw, 1.56rem);
+      letter-spacing: .1em;
+    }
+
+    .hero-time {
+      margin: 8px 0 26px;
+      color: var(--gold);
+      font-size: 1.08rem;
+      letter-spacing: .14em;
+    }
+
+    .names {
+      margin: 0;
+      color: #98702e;
+      font-family: "Bodoni 72", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      font-size: clamp(3.8rem, 15vw, 7.2rem);
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: -.055em;
+      line-height: .94;
+      text-shadow: 0 2px 15px rgba(255, 252, 242, .7);
+    }
+
+    .names .ampersand {
+      display: block;
+      margin: 12px 0 7px;
+      color: var(--gold);
+      font-size: .55em;
+    }
+
+    .scroll-link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 56px;
+      color: var(--gold-dark);
+      font-size: 1.43rem;
+      font-style: italic;
+      text-decoration: none;
+    }
+
+    .scroll-link svg {
+      width: 24px;
+      height: 24px;
+      animation: float 1.8s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      50% {
+        transform: translateY(5px);
+      }
+    }
+
+    .section {
+      position: relative;
+      width: min(100% - 36px, 720px);
+      margin: 0 auto;
+      padding: 84px clamp(20px, 7vw, 64px);
+      text-align: center;
+      background: rgba(255, 250, 240, .84);
+      border-right: 1px solid rgba(169, 133, 60, .14);
+      border-left: 1px solid rgba(169, 133, 60, .14);
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    .motion-ready .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 900ms ease, transform 900ms cubic-bezier(.2, .7, .2, 1);
+    }
+
+    .motion-ready .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .story-section {
+      overflow: hidden;
+    }
+
+    .story-section::before,
+    .story-section::after {
+      position: absolute;
+      width: 190px;
+      height: 190px;
+      color: rgba(217, 148, 156, .55);
+      pointer-events: none;
+      content: "";
+      background:
+        radial-gradient(ellipse at 50% 19%, currentColor 0 8%, transparent 9%),
+        radial-gradient(ellipse at 31% 32%, currentColor 0 10%, transparent 11%),
+        radial-gradient(ellipse at 69% 32%, currentColor 0 10%, transparent 11%),
+        radial-gradient(ellipse at 25% 55%, currentColor 0 9%, transparent 10%),
+        radial-gradient(ellipse at 75% 55%, currentColor 0 9%, transparent 10%),
+        radial-gradient(ellipse at 50% 71%, currentColor 0 11%, transparent 12%);
+      opacity: .16;
+      transition: transform 1.2s ease;
+      translate: 0 var(--parallax-offset, 0);
+    }
+
+    .story-section::before {
+      top: 18px;
+      left: -110px;
+    }
+
+    .story-section::after {
+      right: -115px;
+      bottom: 18px;
+      transform: rotate(35deg);
+    }
+
+    .story-section.is-visible::before {
+      transform: translateY(-8px) rotate(-9deg);
+    }
+
+    .story-section.is-visible::after {
+      transform: translateY(8px) rotate(44deg);
+    }
+
+    .section:nth-of-type(even) {
+      background: rgba(248, 240, 226, .88);
+    }
+
+    .section-heading {
+      margin: 13px 0 22px;
+      color: var(--gold-dark);
+      font-size: clamp(1.8rem, 6vw, 2.65rem);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .section-script {
+      display: block;
+      margin: 10px 0 0;
+      color: var(--rose);
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      font-style: italic;
+    }
+
+    .couple-caption {
+      margin-top: 25px;
+    }
+
+    .couple-pair {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 20px;
+      width: min(100%, 520px);
+      margin: 32px auto 0;
+    }
+
+    .couple-name {
+      color: var(--burgundy);
+      font-size: clamp(1.55rem, 5vw, 2.4rem);
+      font-style: italic;
+    }
+
+    .couple-mark {
+      color: var(--gold-dark);
+      font-size: 1.7rem;
+    }
+
+    .schedule {
+      width: min(100%, 510px);
+      margin: 32px auto 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    .schedule li {
+      display: grid;
+      grid-template-columns: 85px 1fr;
+      gap: 19px;
+      align-items: baseline;
+      padding: 19px 0;
+      border-bottom: 1px solid rgba(214, 183, 122, .42);
+    }
+
+    .schedule li:first-child {
+      border-top: 1px solid rgba(214, 183, 122, .42);
+    }
+
+    .schedule time {
+      color: var(--burgundy);
+      font-size: 1.15rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .schedule span {
+      color: var(--muted);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 16px;
+      width: min(100%, 540px);
+      margin: 34px auto 0;
+      text-align: left;
+    }
+
+    .gallery-item {
+      position: relative;
+      min-height: 245px;
+      margin: 0;
+      overflow: hidden;
+      background: #f2e1d7;
+      border: 1px solid rgba(214, 183, 122, .6);
+    }
+
+    .gallery-item:nth-child(2) {
+      margin-top: 39px;
+    }
+
+    .gallery-item:nth-child(3) {
+      min-height: 195px;
+      margin-top: -39px;
+    }
+
+    .gallery-art {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 44%, rgba(255, 248, 240, .94), transparent 54%),
+        linear-gradient(145deg, #f4dedd, #f8ebdd 55%, #ead6c7);
+      transition: transform 900ms cubic-bezier(.2, .7, .2, 1);
+    }
+
+    .gallery-item:hover .gallery-art {
+      transform: scale(1.045);
+    }
+
+    .gallery-art svg {
+      width: 68%;
+      max-height: 165px;
+      color: var(--rose);
+      opacity: .78;
+    }
+
+    .gallery-item figcaption {
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      padding: 10px 12px;
+      color: var(--ink);
+      background: rgba(255, 248, 240, .9);
+      font-size: .82rem;
+      font-style: italic;
+    }
+
+    .gallery-note {
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: .74rem;
+      line-height: 1.6;
+    }
+
+    .final-message {
+      position: relative;
+      z-index: 1;
+      max-width: 490px;
+      margin: 0 auto;
+      color: var(--burgundy);
+      font-size: clamp(1.8rem, 7vw, 3rem);
+      font-style: italic;
+      line-height: 1.35;
+    }
+
+    .lead {
+      max-width: 490px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.85;
+    }
+
+    .flourish {
+      display: block;
+      width: 120px;
+      height: 26px;
+      margin: 0 auto 23px;
+      color: var(--gold);
+    }
+
+    .countdown {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      width: min(100%, 460px);
+      margin: 36px auto 0;
+    }
+
+    .countdown-item {
+      padding: 19px 8px 16px;
+      background: rgba(255, 255, 255, .56);
+      border: 1px solid rgba(169, 133, 60, .24);
+    }
+
+    .countdown-value {
+      display: block;
+      color: var(--gold-dark);
+      font-size: clamp(1.55rem, 6vw, 2.1rem);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .countdown-value.is-changing {
+      animation: number-settle 320ms ease-out;
+    }
+
+    @keyframes number-settle {
+      from {
+        opacity: .5;
+        transform: translateY(-4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .countdown-label {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: .6rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .event-card {
+      width: min(100%, 440px);
+      margin: 34px auto 0;
+      padding: 24px;
+      background: rgba(255, 255, 255, .49);
+      border: 1px solid rgba(169, 133, 60, .3);
+    }
+
+    .event-time {
+      margin: 0 0 9px;
+      color: var(--gold-dark);
+      font-size: 1.45rem;
+    }
+
+    .event-name {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .venue {
+      margin: 0;
+      color: var(--gold-dark);
+      font-size: 1.7rem;
+      font-weight: 400;
+    }
+
+    .address {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 1.03rem;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 23px;
+      padding: 0 22px;
+      color: #fffaf0;
+      background: var(--gold-dark);
+      border: 1px solid var(--gold-dark);
+      border-radius: 2px;
+      font-family: Arial, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: color .2s ease, background .2s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      color: var(--gold-dark);
+      background: transparent;
+    }
+
+    .button.secondary {
+      color: var(--gold-dark);
+      background: transparent;
+    }
+
+    .button.secondary:hover,
+    .button.secondary:focus-visible {
+      color: #fffaf0;
+      background: var(--gold-dark);
+    }
+
+    .button svg {
+      width: 17px;
+      height: 17px;
+      flex: none;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .reply-form {
+      display: grid;
+      gap: 13px;
+      width: min(100%, 440px);
+      margin: 30px auto 0;
+      text-align: left;
+    }
+
+    .reply-form input,
+    .reply-form select,
+    .reply-form textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 12px 14px;
+      color: var(--ink);
+      background: rgba(255, 255, 255, .74);
+      border: 1px solid rgba(169, 133, 60, .38);
+      border-radius: 2px;
+      font: 1rem "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+    }
+
+    .reply-form textarea {
+      min-height: 102px;
+      resize: vertical;
+    }
+
+    .reply-form input:focus-visible,
+    .reply-form select:focus-visible,
+    .reply-form textarea:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 2px;
+    }
+
+    .reply-form .button {
+      width: 100%;
+      margin-top: 2px;
+      cursor: pointer;
+    }
+
+    .reply-status {
+      min-height: 1.4em;
+      margin: 0;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: .78rem;
+      text-align: center;
+    }
+
+    .reply-fallback[hidden] {
+      display: none;
+    }
+
+    .closing {
+      margin: 41px 0 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-style: italic;
+    }
+
+    footer {
+      width: min(100% - 36px, 720px);
+      margin: 0 auto;
+      padding: 30px 20px 105px;
+      color: var(--muted);
+      background: var(--paper);
+      border: 1px solid rgba(169, 133, 60, .14);
+      border-top: 0;
+      font-size: .84rem;
+      text-align: center;
+    }
+
+    .music-dock {
+      position: fixed;
+      z-index: 5;
+      right: max(20px, calc((100vw - 720px) / 2));
+      bottom: max(20px, env(safe-area-inset-bottom));
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: calc(100vw - 32px);
+      padding: 8px 17px 8px 8px;
+      color: var(--ink);
+      background: rgba(255, 250, 240, .97);
+      border: 1px solid rgba(169, 133, 60, .32);
+      border-radius: 40px;
+      box-shadow: 0 7px 25px rgba(73, 53, 30, .2);
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .music-button {
+      display: grid;
+      width: 50px;
+      height: 50px;
+      flex: none;
+      place-items: center;
+      color: var(--paper);
+      background: linear-gradient(145deg, #b77a81, #88454f);
+      border: 0;
+      border-radius: 50%;
+      box-shadow: 0 3px 9px rgba(73, 53, 30, .25);
+      cursor: pointer;
+    }
+
+    .music-button svg {
+      width: 21px;
+      height: 21px;
+    }
+
+    .music-copy {
+      display: grid;
+      gap: 4px;
+      min-width: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .music-title {
+      overflow: hidden;
+      font-size: .76rem;
+      font-weight: 700;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .music-hint {
+      color: var(--muted);
+      font-size: .65rem;
+    }
+
+    .music-player {
+      position: fixed;
+      z-index: 6;
+      right: max(20px, calc((100vw - 720px) / 2));
+      bottom: calc(max(20px, env(safe-area-inset-bottom)) + 76px);
+      width: min(350px, calc(100vw - 32px));
+      padding: 11px;
+      background: var(--paper);
+      border: 1px solid rgba(169, 133, 60, .35);
+      box-shadow: 0 12px 35px rgba(73, 53, 30, .22);
+    }
+
+    .music-player[hidden] {
+      display: none;
+    }
+
+    .music-player audio {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      accent-color: var(--burgundy);
+    }
+
+    .music-player p {
+      margin: 10px 3px 2px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: .72rem;
+    }
+
+    .music-link {
+      display: inline-block;
+      margin: 7px 3px 1px;
+      color: var(--gold-dark);
+      font-family: Arial, sans-serif;
+      font-size: .7rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .cinematic-intro {
+      position: fixed;
+      z-index: 20;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 38%, rgba(255, 252, 248, .98), rgba(248, 235, 221, .96) 70%),
+        var(--paper);
+      transition: opacity 900ms ease, visibility 900ms ease;
+    }
+
+    .cinematic-intro.is-opening {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .intro-copy {
+      position: absolute;
+      top: max(8vh, 34px);
+      z-index: 2;
+      width: min(90vw, 460px);
+      text-align: center;
+    }
+
+    .intro-copy strong {
+      display: block;
+      color: var(--burgundy);
+      font-size: clamp(1.65rem, 6vw, 2.5rem);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .intro-copy span {
+      display: block;
+      margin-top: 10px;
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .envelope-stage {
+      position: relative;
+      width: min(82vw, 450px);
+      aspect-ratio: 1.42;
+      margin-top: 120px;
+      perspective: 1200px;
+    }
+
+    .envelope-shadow {
+      position: absolute;
+      right: 5%;
+      bottom: 3%;
+      left: 5%;
+      height: 13%;
+      border-radius: 50%;
+      background: rgba(73, 52, 56, .16);
+      filter: blur(17px);
+      transform: translateY(24px);
+    }
+
+    .envelope {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background:
+        repeating-linear-gradient(0deg, rgba(153, 114, 100, .026) 0 1px, transparent 1px 4px),
+        linear-gradient(145deg, #fffaf4, #f4e6d9);
+      border: 1px solid rgba(169, 133, 60, .62);
+      box-shadow: 0 18px 40px rgba(73, 52, 56, .13), inset 0 0 0 7px rgba(255, 255, 255, .39);
+      transform: rotateX(2deg) rotateY(-2deg);
+      transform-style: preserve-3d;
+    }
+
+    .envelope::before,
+    .envelope::after {
+      position: absolute;
+      z-index: 2;
+      inset: 0;
+      content: "";
+      pointer-events: none;
+    }
+
+    .envelope::before {
+      background: linear-gradient(145deg, transparent 49.7%, rgba(214, 183, 122, .72) 50%, transparent 50.35%);
+      clip-path: polygon(0 0, 100% 0, 50% 69%);
+    }
+
+    .envelope::after {
+      background:
+        linear-gradient(35deg, transparent 49.6%, rgba(214, 183, 122, .58) 50%, transparent 50.35%),
+        linear-gradient(-35deg, transparent 49.6%, rgba(214, 183, 122, .58) 50%, transparent 50.35%);
+    }
+
+    .envelope-flap {
+      position: absolute;
+      z-index: 4;
+      inset: 0 0 auto;
+      height: 69%;
+      background: linear-gradient(160deg, #fffaf4, #efdfd1);
+      border: 1px solid rgba(169, 133, 60, .56);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transform: rotateX(0);
+      transform-origin: top center;
+      transition: transform 800ms cubic-bezier(.2, .75, .2, 1);
+      backface-visibility: hidden;
+    }
+
+    .envelope-seal {
+      position: absolute;
+      z-index: 5;
+      top: 48%;
+      left: 50%;
+      display: grid;
+      width: clamp(68px, 18vw, 92px);
+      aspect-ratio: 1;
+      place-items: center;
+      color: #fff5eb;
+      background:
+        radial-gradient(circle at 34% 29%, rgba(255, 255, 255, .23), transparent 31%),
+        radial-gradient(circle, #ad5f6b 0 60%, #8c4655 62% 100%);
+      border: 1px solid rgba(126, 60, 69, .66);
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(73, 52, 56, .22), inset 0 0 0 4px rgba(255, 235, 226, .18);
+      font-size: clamp(1rem, 4vw, 1.4rem);
+      font-style: italic;
+      transform: translate(-50%, -50%);
+      transition: opacity 360ms ease, transform 500ms ease;
+    }
+
+    .envelope-open {
+      position: absolute;
+      z-index: 3;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: grid;
+      height: 72%;
+      place-items: center;
+      color: rgba(166, 77, 90, .74);
+      font-size: clamp(1.5rem, 5vw, 2.2rem);
+      font-style: italic;
+    }
+
+    .envelope-open::before,
+    .envelope-open::after {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: linear-gradient(35deg, transparent 49.5%, rgba(214, 183, 122, .56) 50%, transparent 50.4%);
+      pointer-events: none;
+    }
+
+    .envelope-open::after {
+      background: linear-gradient(-35deg, transparent 49.5%, rgba(214, 183, 122, .56) 50%, transparent 50.4%);
+    }
+
+    .invitation-card {
+      position: absolute;
+      z-index: 1;
+      top: 12%;
+      left: 10%;
+      display: grid;
+      width: 80%;
+      height: 76%;
+      align-content: center;
+      padding: 22px;
+      color: var(--burgundy);
+      background:
+        repeating-linear-gradient(0deg, rgba(153, 114, 100, .02) 0 1px, transparent 1px 4px),
+        var(--paper);
+      border: 1px solid rgba(214, 183, 122, .8);
+      box-shadow: 0 5px 18px rgba(73, 52, 56, .13);
+      text-align: center;
+      opacity: .78;
+      transform: translateY(55%) scale(.92);
+      transition: opacity 700ms 250ms ease, transform 900ms 300ms cubic-bezier(.2, .75, .2, 1);
+    }
+
+    .invitation-card small {
+      font-family: Arial, sans-serif;
+      font-size: .58rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .invitation-card strong {
+      display: block;
+      margin: 9px 0;
+      font-size: clamp(1.15rem, 4vw, 1.8rem);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .invitation-card span {
+      color: var(--muted);
+      font-size: .78rem;
+    }
+
+    .open-invitation {
+      position: relative;
+      z-index: 3;
+      margin-top: 42px;
+      padding: 16px 25px;
+      color: #fff8f0;
+      background: var(--burgundy);
+      border: 1px solid var(--burgundy);
+      font-family: Arial, sans-serif;
+      font-size: .72rem;
+      letter-spacing: .16em;
+      cursor: pointer;
+      transition: color .2s ease, background .2s ease, transform .2s ease;
+    }
+
+    .open-invitation:hover,
+    .open-invitation:focus-visible {
+      color: var(--burgundy);
+      background: transparent;
+    }
+
+    .intro-hint {
+      position: absolute;
+      bottom: max(5vh, 20px);
+      margin: 0;
+      color: var(--muted);
+      font-size: .88rem;
+      font-style: italic;
+    }
+
+    .cinematic-intro.is-opening .envelope-flap {
+      transform: rotateX(180deg);
+    }
+
+    .cinematic-intro.is-opening .envelope-seal {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(1.7) rotate(18deg);
+    }
+
+    .cinematic-intro.is-opening .invitation-card {
+      z-index: 3;
+      opacity: 1;
+      transform: translateY(-48%) scale(1.08);
+    }
+
+    .petal-layer,
+    .particle-layer {
+      position: fixed;
+      z-index: 4;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .petal {
+      position: absolute;
+      top: -12vh;
+      left: var(--left);
+      width: var(--size);
+      height: calc(var(--size) * 1.5);
+      background: linear-gradient(145deg, rgba(242, 198, 198, .9), rgba(217, 148, 156, .68));
+      border-radius: 100% 0 100% 0;
+      opacity: var(--opacity);
+      transform: rotate(var(--turn));
+      animation: petal-fall var(--duration) linear var(--delay) infinite;
+    }
+
+    @keyframes petal-fall {
+      0% {
+        translate: 0 -12vh;
+        rotate: 0deg;
+      }
+      48% {
+        translate: var(--drift) 52vh;
+        rotate: 180deg;
+      }
+      100% {
+        translate: calc(var(--drift) * -0.5) 112vh;
+        rotate: 420deg;
+      }
+    }
+
+    .gold-particle {
+      position: absolute;
+      top: var(--top);
+      left: var(--left);
+      width: var(--size);
+      height: var(--size);
+      background: rgba(214, 183, 122, .72);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(214, 183, 122, .34);
+      animation: particle-glow var(--duration) ease-in-out var(--delay) infinite alternate;
+    }
+
+    @keyframes particle-glow {
+      to {
+        opacity: .18;
+        transform: translate3d(7px, -13px, 0) scale(.72);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        min-height: max(680px, 100svh);
+        padding-inline: 18px;
+      }
+
+      .hero::before {
+        inset: 12px 9px;
+      }
+
+      .hero-content {
+        padding-top: 14px;
+      }
+
+      .hero-flower {
+        margin-bottom: 15px;
+      }
+
+      .scroll-link {
+        margin-top: 43px;
+      }
+
+      .section {
+        width: calc(100% - 20px);
+        padding-top: 69px;
+        padding-bottom: 69px;
+      }
+
+      .countdown {
+        gap: 7px;
+      }
+
+      .countdown-item {
+        padding: 15px 3px 13px;
+      }
+
+      .countdown-label {
+        font-size: .52rem;
+        letter-spacing: .06em;
+      }
+
+      .button-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .button-row .button {
+        width: min(100%, 280px);
+        margin-top: 12px;
+      }
+
+      .music-dock {
+        right: 12px;
+        bottom: max(12px, env(safe-area-inset-bottom));
+      }
+
+      .music-player {
+        right: 12px;
+        bottom: calc(max(12px, env(safe-area-inset-bottom)) + 72px);
+      }
+
+      .gallery {
+        gap: 10px;
+      }
+
+      .gallery-item {
+        min-height: 190px;
+      }
+
+      .gallery-item:nth-child(2) {
+        margin-top: 24px;
+      }
+
+      .gallery-item:nth-child(3) {
+        min-height: 165px;
+        margin-top: -24px;
+      }
+
+      .envelope-stage {
+        width: min(88vw, 390px);
+        margin-top: 110px;
+      }
+
+      .open-invitation {
+        margin-top: 30px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .scroll-link svg {
+        animation: none;
+      }
+
+      .petal,
+      .gold-particle {
+        animation: none;
+        display: none;
+      }
+
+      .motion-ready .reveal,
+      .motion-ready .reveal.is-visible {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition-duration: .01ms !important;
+      }
+    }
+
+    @media print {
+      .cinematic-intro,
+      .petal-layer,
+      .particle-layer,
+      .music-dock,
+      .music-player,
+      .button-row {
+        display: none;
+      }
+
+      .motion-ready .reveal {
+        opacity: 1;
+        transform: none;
+      }
+
+      .hero,
+      .section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cinematic-intro" id="cinematic-intro">
+    <div class="intro-copy">
+      <strong>With love, we invite you</strong>
+      <span>An invitation to our special day</span>
+    </div>
+    <div class="envelope-stage" aria-label="Ozodbek va M.M. uchun to‘y taklifnomasi">
+      <div class="envelope-shadow"></div>
+      <div class="envelope">
+        <div class="invitation-card">
+          <small>21 · 10 · 2026</small>
+          <strong>Ozodbek &amp; M.M.</strong>
+          <span>Nikoh to‘yimizga taklif qilamiz</span>
+        </div>
+        <div class="envelope-open" aria-hidden="true">O &amp; M</div>
+        <div class="envelope-flap"></div>
+        <div class="envelope-seal" aria-hidden="true">O &amp; M</div>
+      </div>
+    </div>
+    <button class="open-invitation" id="open-invitation" type="button">OPEN YOUR INVITATION</button>
+    <p class="intro-hint">Taklifnomani ochish uchun bosing</p>
+  </div>
+  <div class="petal-layer" id="petal-layer" aria-hidden="true"></div>
+  <div class="particle-layer" id="particle-layer" aria-hidden="true"></div>
+
+  <header class="hero" id="top">
+    <div class="hero-content">
+      <svg class="hero-flower" viewBox="0 0 360 150" fill="none" aria-hidden="true">
+        <path d="M180 132V28M180 94c-32-31-68-42-109-35 27 28 60 43 109 39M180 94c32-31 68-42 109-35-27 28-60 43-109 39" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M180 48c-17-11-24-25-14-33 10-8 20 4 14 16 6-12 16-24 26-16 10 8 3 22-14 33M87 71c-23-17-45-19-51-8-6 12 12 22 29 17M273 71c23-17 45-19 51-8 6 12-12 22-29 17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M57 130c16-18 26-34 30-51m216 51c-16-18-26-34-30-51M90 123c-13-13-20-28-22-42m202 42c13-13 20-28 22-42" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        <circle cx="180" cy="28" r="3" fill="currentColor"/>
+        <circle cx="36" cy="63" r="2" fill="currentColor"/>
+        <circle cx="324" cy="63" r="2" fill="currentColor"/>
+      </svg>
+
+      <p class="eyebrow">Nikoh to‘yi</p>
+      <p class="hero-date">21 · 10 · 2026</p>
+      <p class="hero-time">SOAT 18:00</p>
+      <h1 class="names">Ozodbek <span class="ampersand">&amp;</span> M.M.</h1>
+      <a class="scroll-link" href="#taklif">
+        Taklifnomani ochish
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="m5 9 7 7 7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section story-section reveal" id="taklif">
+      <svg class="flourish" viewBox="0 0 140 30" fill="none" aria-hidden="true">
+        <path d="M4 15h48m36 0h48M70 4c-8 6-8 16 0 22 8-6 8-16 0-22Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        <circle cx="70" cy="15" r="2" fill="currentColor"/>
+      </svg>
+      <p class="section-label">Sizni chin qalbimizdan taklif etamiz</p>
+      <h2 class="section-heading">Quvonchimizga sherik bo‘ling</h2>
+      <p class="lead">Assalomu alaykum, aziz va qadrli mehmon! Hayotimizdagi eng unutilmas kunlardan biri — nikoh to‘yimizda biz bilan birga bo‘lishga taklif etamiz. Quvonchimizga sherik bo‘lishingiz biz uchun katta baxt.</p>
+    </section>
+
+    <section class="section story-section reveal" aria-labelledby="couple-heading">
+      <p class="section-label">Bir umrga atalgan va’da</p>
+      <h2 class="section-heading" id="couple-heading">Ikki qalb, bir yo‘l</h2>
+      <p class="section-script">Two hearts, one beautiful beginning.</p>
+      <div class="couple-pair" aria-label="Ozodbek va M.M.">
+        <span class="couple-name">Ozodbek</span>
+        <span class="couple-mark" aria-hidden="true">&amp;</span>
+        <span class="couple-name">M.M.</span>
+      </div>
+      <p class="lead couple-caption">21-oktabr 2026 — yangi hayotimizning ilk sahifasi.</p>
+    </section>
+
+    <section class="section story-section reveal" aria-labelledby="countdown-heading">
+      <p class="section-label">Katta kunimizga</p>
+      <h2 class="section-heading" id="countdown-heading">Qancha vaqt qoldi?</h2>
+      <div class="countdown" role="timer" aria-label="To‘ygacha qolgan vaqt">
+        <div class="countdown-item"><span class="countdown-value" id="days">—</span><span class="countdown-label">kun</span></div>
+        <div class="countdown-item"><span class="countdown-value" id="hours">—</span><span class="countdown-label">soat</span></div>
+        <div class="countdown-item"><span class="countdown-value" id="minutes">—</span><span class="countdown-label">daqiqa</span></div>
+        <div class="countdown-item"><span class="countdown-value" id="seconds">—</span><span class="countdown-label">soniya</span></div>
+      </div>
+    </section>
+
+    <section class="section story-section reveal" aria-labelledby="event-heading">
+      <p class="section-label">Sana va vaqt</p>
+      <h2 class="section-heading" id="event-heading">21-oktabr, 2026</h2>
+      <p class="lead">Chorshanba kuni, soat 18:00 da sizni kutamiz.</p>
+      <ul class="schedule" aria-label="To‘y dasturi">
+        <li><time datetime="18:00">18:00</time><span>Mehmonlarni kutib olish va to‘y tantanasi</span></li>
+      </ul>
+      <div class="event-card">
+        <p class="event-time">18:00</p>
+        <p class="event-name">To‘y oqshomi boshlanishi</p>
+        <a class="button secondary" id="calendar-link" href="#">KALENDARIMGA QO‘SHISH</a>
+      </div>
+    </section>
+
+    <section class="section story-section reveal" aria-labelledby="location-heading">
+      <svg class="flourish" viewBox="0 0 140 30" fill="none" aria-hidden="true">
+        <path d="M4 15h48m36 0h48M70 4c-8 6-8 16 0 22 8-6 8-16 0-22Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        <circle cx="70" cy="15" r="2" fill="currentColor"/>
+      </svg>
+      <p class="section-label">Manzilimiz</p>
+      <h2 class="section-heading" id="location-heading">Visol to‘yxonasi</h2>
+      <p class="address">Uchko‘prik tumani</p>
+      <a class="button" href="https://www.google.com/maps/search/?api=1&amp;query=Visol+to%27yxonasi%2C+Uchko%27prik+tumani" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.3" stroke="currentColor" stroke-width="1.5"/></svg>
+        XARITADA KO‘RISH
+      </a>
+    </section>
+
+    <section class="section story-section reveal" aria-labelledby="gallery-heading">
+      <p class="section-label">Qalbimizdagi lahzalar</p>
+      <h2 class="section-heading" id="gallery-heading">Bizning xotiralar</h2>
+      <p class="lead">Birga boshlangan go‘zal hikoyamizdan lavhalar.</p>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <div class="gallery-art">
+            <svg viewBox="0 0 140 140" fill="none" aria-hidden="true">
+              <path d="M69 122c5-33 5-55 1-75m0 45c-16-14-30-17-45-13 11 14 25 21 45 20m0-13c14-16 28-20 43-16-9 15-23 23-43 23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M70 48c-13-7-18-19-10-26 7-6 14 2 10 12 4-10 13-18 20-12 8 7 3 19-10 26M27 80c-11-8-22-9-25-3-3 7 6 12 15 9m96-6c11-8 22-9 25-3 3 7-6 12-15 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="70" cy="48" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <figcaption>Bir hikoya boshlanadi</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="gallery-art">
+            <svg viewBox="0 0 140 140" fill="none" aria-hidden="true">
+              <path d="M33 100c10-32 64-32 74 0M42 98c1-23 12-41 28-41s27 18 28 41M70 56V35m0 21c-9-14-24-19-34-13 7 14 18 21 34 20m0-7c9-14 24-19 34-13-7 14-18 21-34 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="70" cy="47" r="7" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M50 112h40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <figcaption>Mehr ila, Ozodbek &amp; M.M.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="gallery-art">
+            <svg viewBox="0 0 140 140" fill="none" aria-hidden="true">
+              <path d="M70 116V47m0 47c-15-17-28-23-43-20 10 16 23 24 43 27m0-16c14-17 27-22 42-19-9 15-22 23-42 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M70 56c-15-8-21-20-12-28 8-7 16 2 12 13 4-11 14-20 23-13 9 8 3 20-12 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M28 117h84M42 125h56" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <figcaption>Baxtli kunimizga birga</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">Rasmlar keyinroq shu bo‘limdagi bezaklar o‘rniga oson qo‘shilishi mumkin.</p>
+    </section>
+
+    <section class="section story-section reveal" aria-labelledby="rsvp-heading">
+      <p class="section-label">Ishtirokingiz biz uchun muhim</p>
+      <h2 class="section-heading" id="rsvp-heading">Javob va tilaklaringiz</h2>
+      <p class="lead">Ishtirokingizni tasdiqlang va bizga ezgu tilaklaringizni qoldiring. Xabaringiz WhatsApp orqali yuboriladi.</p>
+      <form class="reply-form" id="reply-form">
+        <label class="sr-only" for="guest-name">Ismingiz</label>
+        <input id="guest-name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="Ismingiz" required>
+        <label class="sr-only" for="attendance">Ishtirok javobi</label>
+        <select id="attendance" name="attendance" required>
+          <option value="" disabled selected>Ishtirokingizni tanlang</option>
+          <option value="yes">Albatta, ishtirok etaman</option>
+          <option value="no">Afsuski, bora olmayman</option>
+        </select>
+        <label class="sr-only" for="wish">Tilagingiz</label>
+        <textarea id="wish" name="wish" maxlength="500" placeholder="Ezgu tilagingiz (ixtiyoriy)"></textarea>
+        <button class="button" type="submit">JAVOB VA TILAKNI YUBORISH</button>
+        <p class="reply-status" id="reply-status" role="status" aria-live="polite"></p>
+        <a class="reply-fallback" id="reply-fallback" href="#" target="_blank" rel="noopener noreferrer" hidden>WhatsApp havolasini ochish</a>
+      </form>
+      <div class="button-row">
+        <a class="button secondary" href="tel:+998940102131">94 010 21 31 RAQAMIGA QO‘NG‘IROQ</a>
+      </div>
+      <p class="closing">Hurmat va ezgu tilaklar ila,<br>Ozodbek &amp; M.M.</p>
+    </section>
+  </main>
+
+    <section class="section story-section reveal" aria-labelledby="final-heading">
+      <svg class="flourish" viewBox="0 0 140 30" fill="none" aria-hidden="true">
+        <path d="M4 15h48m36 0h48M70 4c-8 6-8 16 0 22 8-6 8-16 0-22Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        <circle cx="70" cy="15" r="2" fill="currentColor"/>
+      </svg>
+      <p class="section-label">Kutib qolamiz</p>
+      <h2 class="final-message" id="final-heading">Ushbu unutilmas kunimizda sizni kutib qolamiz.</h2>
+      <p class="closing">Ozodbek &amp; M.M.<br>21-oktabr, 2026</p>
+    </section>
+  </main>
+
+  <footer>Quvonchli kunimizda ko‘rishguncha!</footer>
+
+  <div class="music-player" id="music-player" hidden>
+    <p>BLOK3 — SEBEBİ YAR</p>
+    <audio id="wedding-audio" controls preload="none">
+      <source src="assets/sebebi-yar.mp3" type="audio/mpeg">
+      Brauzeringiz audio ijrosini qo‘llab-quvvatlamaydi.
+    </audio>
+    <p class="audio-note" id="audio-note">Musiqani ijro etish uchun tugmani bosing. Audio topilmasa, YouTube havolasidan foydalaning.</p>
+    <a class="music-link" href="https://www.youtube.com/watch?v=69L-nKRY3ac" target="_blank" rel="noopener noreferrer">YouTube’da tinglash</a>
+  </div>
+  <button class="music-dock" id="music-toggle" type="button" aria-label="BLOK3 — SEBEBİ YAR musiqasini tinglash" aria-expanded="false" aria-controls="music-player">
+    <span class="music-button" aria-hidden="true">
+      <svg id="music-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5.8c0-.8.9-1.3 1.6-.8l9 6.2a1 1 0 0 1 0 1.6l-9 6.2a1 1 0 0 1-1.6-.8V5.8Z"/>
+      </svg>
+    </span>
+    <span class="music-copy">
+      <span class="music-title">BLOK3 — SEBEBİ YAR</span>
+      <span class="music-hint" id="music-hint">Musiqani tinglash</span>
+    </span>
+  </button>
+
+  <script>
+    const intro = document.getElementById("cinematic-intro");
+    const openInvitationButton = document.getElementById("open-invitation");
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    document.body.classList.add("intro-active");
+
+    openInvitationButton.addEventListener("click", () => {
+      intro.classList.add("is-opening");
+      openInvitationButton.disabled = true;
+      window.setTimeout(() => {
+        intro.hidden = true;
+        document.body.classList.remove("intro-active");
+        document.body.classList.add("invitation-open");
+        document.getElementById("top").scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth" });
+      }, reducedMotion ? 0 : 1500);
+    }, { once: true });
+
+    const petalLayer = document.getElementById("petal-layer");
+    const particleLayer = document.getElementById("particle-layer");
+    if (!reducedMotion) {
+      for (let index = 0; index < 11; index += 1) {
+        const petal = document.createElement("span");
+        petal.className = "petal";
+        petal.style.setProperty("--left", `${Math.random() * 100}%`);
+        petal.style.setProperty("--size", `${8 + Math.random() * 11}px`);
+        petal.style.setProperty("--opacity", `${0.3 + Math.random() * 0.4}`);
+        petal.style.setProperty("--turn", `${Math.random() * 360}deg`);
+        petal.style.setProperty("--duration", `${17 + Math.random() * 17}s`);
+        petal.style.setProperty("--delay", `${-Math.random() * 30}s`);
+        petal.style.setProperty("--drift", `${-50 + Math.random() * 100}px`);
+        petalLayer.append(petal);
+      }
+
+      for (let index = 0; index < 16; index += 1) {
+        const particle = document.createElement("span");
+        particle.className = "gold-particle";
+        particle.style.setProperty("--left", `${Math.random() * 100}%`);
+        particle.style.setProperty("--top", `${Math.random() * 100}%`);
+        particle.style.setProperty("--size", `${2 + Math.random() * 3}px`);
+        particle.style.setProperty("--duration", `${3 + Math.random() * 5}s`);
+        particle.style.setProperty("--delay", `${-Math.random() * 8}s`);
+        particleLayer.append(particle);
+      }
+
+      document.body.classList.add("motion-ready");
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            for (let index = 0; index < 4; index += 1) {
+              const petal = document.createElement("span");
+              petal.className = "transition-petal";
+              petal.style.setProperty("--travel-x", `${-80 + Math.random() * 160}px`);
+              petal.style.setProperty("--travel-y", `${-70 - Math.random() * 100}px`);
+              particleLayer.append(petal);
+              window.setTimeout(() => petal.remove(), 1500);
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.16 });
+
+      document.querySelectorAll(".reveal").forEach((section) => revealObserver.observe(section));
+
+      let parallaxFrame = 0;
+      window.addEventListener("scroll", () => {
+        if (parallaxFrame) return;
+        parallaxFrame = window.requestAnimationFrame(() => {
+          document.querySelectorAll(".story-section.is-visible").forEach((section) => {
+            const offset = section.getBoundingClientRect().top * -0.025;
+            section.style.setProperty("--parallax-offset", `${offset}px`);
+          });
+          parallaxFrame = 0;
+        });
+      }, { passive: true });
+    } else {
+      document.querySelectorAll(".reveal").forEach((section) => section.classList.add("is-visible"));
+    }
+
+    const weddingDate = new Date("2026-10-21T18:00:00+05:00").getTime();
+    const countdownFields = {
+      days: document.getElementById("days"),
+      hours: document.getElementById("hours"),
+      minutes: document.getElementById("minutes"),
+      seconds: document.getElementById("seconds")
+    };
+
+    function updateCountdown() {
+      const remaining = Math.max(0, weddingDate - Date.now());
+      const values = {
+        days: Math.floor(remaining / 86400000),
+        hours: Math.floor((remaining % 86400000) / 3600000),
+        minutes: Math.floor((remaining % 3600000) / 60000),
+        seconds: Math.floor((remaining % 60000) / 1000)
+      };
+      Object.entries(values).forEach(([unit, value]) => {
+        const field = countdownFields[unit];
+        const nextValue = String(value);
+        if (field.textContent !== nextValue) {
+          field.textContent = nextValue;
+          field.classList.remove("is-changing");
+          void field.offsetWidth;
+          field.classList.add("is-changing");
+        }
+      });
+    }
+
+    updateCountdown();
+    window.setInterval(updateCountdown, 1000);
+
+    const calendarStart = "20261021T130000Z";
+    const calendarStamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+    const calendarEvent = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Taklifnoma//Ozodbek va MM//UZ",
+      "BEGIN:VEVENT",
+      "UID:ozodbek-mm-toy-20261021@taklifnoma.local",
+      `DTSTAMP:${calendarStamp}`,
+      `DTSTART:${calendarStart}`,
+      "SUMMARY:Ozodbek va M.M. nikoh to‘yi",
+      "LOCATION:Visol to‘yxonasi, Uchko‘prik tumani",
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n");
+    const calendarLink = document.getElementById("calendar-link");
+    calendarLink.href = URL.createObjectURL(new Blob([calendarEvent], { type: "text/calendar;charset=utf-8" }));
+    calendarLink.download = "ozodbek-mm-toy.ics";
+
+    const musicToggle = document.getElementById("music-toggle");
+    const musicPlayer = document.getElementById("music-player");
+    const weddingAudio = document.getElementById("wedding-audio");
+    const audioNote = document.getElementById("audio-note");
+    const musicHint = document.getElementById("music-hint");
+    const musicIcon = document.getElementById("music-icon");
+    const musicLink = document.querySelector(".music-link");
+    if (window.location.protocol === "file:") {
+      musicLink.href = "https://www.youtube.com/watch?v=69L-nKRY3ac";
+    }
+
+    function setMusicState(playing) {
+      musicIcon.innerHTML = playing
+        ? '<path d="M7 5h4v14H7zM15 5h4v14h-4z"/>'
+        : '<path d="M8 5.8c0-.8.9-1.3 1.6-.8l9 6.2a1 1 0 0 1 0 1.6l-9 6.2a1 1 0 0 1-1.6-.8V5.8Z"/>';
+      musicToggle.setAttribute("aria-label", playing ? "Musiqani to‘xtatish" : "BLOK3 — SEBEBİ YAR musiqasini tinglash");
+      musicHint.textContent = playing ? "Ijro etilmoqda" : "Musiqani tinglash";
+    }
+
+    weddingAudio.addEventListener("playing", () => setMusicState(true));
+    weddingAudio.addEventListener("pause", () => setMusicState(false));
+    weddingAudio.addEventListener("ended", () => setMusicState(false));
+    weddingAudio.addEventListener("error", () => {
+      audioNote.textContent = "Mahalliy audio fayl topilmadi. assets/sebebi-yar.mp3 faylini qo‘shing yoki YouTube’da tinglang.";
+      musicPlayer.hidden = false;
+      musicToggle.setAttribute("aria-expanded", "true");
+      weddingAudio.pause();
+      setMusicState(false);
+    });
+
+    musicToggle.addEventListener("click", () => {
+      if (weddingAudio.paused) {
+        musicPlayer.hidden = false;
+        musicToggle.setAttribute("aria-expanded", "true");
+        if (weddingAudio.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
+          audioNote.textContent = "Mahalliy audio fayl topilmadi. assets/sebebi-yar.mp3 faylini qo‘shing yoki YouTube’da tinglang.";
+          setMusicState(false);
+          return;
+        }
+        weddingAudio.play().catch(() => {
+          audioNote.textContent = "Mahalliy audio fayl mavjud emas yoki ijro etilmadi. YouTube havolasidan foydalaning.";
+          setMusicState(false);
+        });
+        window.setTimeout(() => {
+          if (weddingAudio.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) {
+            weddingAudio.pause();
+            audioNote.textContent = "Mahalliy audio fayl topilmadi. assets/sebebi-yar.mp3 faylini qo‘shing yoki YouTube’da tinglang.";
+            setMusicState(false);
+          }
+        }, 1200);
+      } else {
+        weddingAudio.pause();
+      }
+    });
+
+    const replyForm = document.getElementById("reply-form");
+    const replyStatus = document.getElementById("reply-status");
+    const replyFallback = document.getElementById("reply-fallback");
+    replyForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(replyForm);
+      const name = String(formData.get("name")).trim();
+      const attendance = formData.get("attendance") === "yes"
+        ? "ishtirok etaman"
+        : "ishtirok eta olmayman";
+      const wish = String(formData.get("wish")).trim();
+      const message = [
+        `Assalomu alaykum! Men ${name}.`,
+        `Ozodbek va M.M.ning to‘yida ${attendance}.`,
+        wish ? `Tilagim: ${wish}` : ""
+      ].filter(Boolean).join("\n");
+      const whatsappUrl = `https://wa.me/998940102131?text=${encodeURIComponent(message)}`;
+
+      replyFallback.href = whatsappUrl;
+      replyFallback.hidden = false;
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+      replyStatus.textContent = "WhatsApp’da tayyor xabarni tekshirib yuboring. Oyna ochilmasa, quyidagi havolani bosing.";
+    });
+  </script>
+</body>
+</html>
